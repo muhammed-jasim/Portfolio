@@ -64,15 +64,28 @@
 
                 <!-- about--section -->
 
-    <section id="about">
+    <!-- <section id="about">
         <div class="about-sec" >
             <div class="about-txt">
                 <p id="p1">About.Me</p>
                 <p id="p2">I am Muhammed Jasim K, a Full stack developer with proficiency in both front-end and back-end web application development, possessing strong analytical and creative skills, and being a team player with a keen attention to detail.</p>
             </div>
         </div>
-    </section>
+    </section> -->
+    <section id="about">
+        <div class="main-about">
+            <div class="main-about-txt"><h1 class="abot-txt">About Me.</h1></div>
+            <div class="about-contents">
+                <div class="about-first-sec">
+                    <img src="/my-portfolio/images/jasim.jpg" alt="" id="about-photo">
+                </div>
+                <div class="about-second-sec">
+                    <p>I am Muhammed Jasim K, a Full stack developer with proficiency in both front-end and back-end web application development, possessing strong analytical and creative skills, and being a team player with a keen attention to detail.</p>
+                </div>
+            </div>
+        </div>
 
+    </section>
 
 
             <!-- skill--section -->
@@ -142,44 +155,46 @@
             <span class="Service-bottom-txt">What i offers.</span>
         </div>
         <div class="services">
-            <div class="service-items">
+            <div class="service-items" id="static-web-div">
                 <div class="service-icon">
                     <span class="material-symbols-outlined" id="service-icon" >
                         web
                         </span>
                 </div>
-                <div class="service-type-txt-div">
+                <div class="service-type-txt-div" id="Static">
                     <p class="service-type-txt">Static Website</p>
                 </div>
             </div>
-            <div class="service-items">
+            <div class="service-items"  id="web-designing-div">
                 <div class="service-icon">
                     <span class="material-symbols-outlined" id="service-icon">
                         palette
                         </span>
                 </div>
-                <div class="service-type-txt-div">
+                <div class="service-type-txt-div" id="web-designing">
                     <p class="service-type-txt">Web Designing</p>
                 </div>
 
             </div>
-            <div class="service-items">
+            <div class="service-items" id="animation-div">
                 <div class="service-icon">
                     <span class="material-symbols-outlined" id="service-icon" >
                         animation
                         </span>
                 </div>
-                <div class="service-type-txt-div">
+                <div class="service-type-txt-div" id="animation-img">
                     <p class="service-type-txt">Animation</p>
                 </div>
 
             </div>
         </div>
-
-        <div class="service-contact-click">
-            <a href="#contact-sec"><div id="service-contact">Contact Me</div></a>
+        <div class="service-contact-info">
+            <p class="service-contact-info-txt sizee">I Would Love to make your Ideas real.</p>
+            <p class="service-contact-info-txt  sizee2">I can give your business a new creative start right away! Hire me for your awesome project. Contact me now!</p>
+            <div class="service-contact-click">
+                <a href="#contact-sec"><div id="service-contact">Contact Me</div></a>
+            </div>
         </div>
-
     </section>
 
 
@@ -228,11 +243,13 @@
                         <!-- <div class="inp"> -->
                         <div class="input-sec">
                             <div class="form">
-                                <input type="text" placeholder="Name*" required><br>
-                                <input type="email" placeholder="Email*" required ><br>
-                                <input type="text" placeholder="Place*"><br>
-                                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message*"></textarea><br>
-                                <div id="co-btn"><a href="#home"><button id="btn">Contact Me</button></div></a>
+                                <form action="">
+                                    <input type="text" placeholder="Name*" required><br>
+                                    <input type="email" placeholder="Email*" required ><br>
+                                    <input type="text" placeholder="Place*"><br>
+                                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message*" required></textarea><br>
+                                    <div id="co-btn"><button id="btn">Contact Me</button></div>
+                                </form>
                             </div>
                         </div>
                     </div>
