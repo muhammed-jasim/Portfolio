@@ -7,7 +7,10 @@
     <title>Muhammed Jasim</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
     <section id="home">
@@ -19,6 +22,7 @@
                         <a href="#about"><li class="items">About</li></a>
                         <a href="#skill-sec"><li class="items">Skill</li></a>
                         <a href="#service-sec"><li class="items">Service</li></a>
+                        <a href="#portfolio"><li class="items">Portfolio</li></a>
                         <a href="#contact-sec"><li class="items">Contact</li></a>
                     </ul>
                     <div class="m"></div>
@@ -75,12 +79,29 @@
     <section id="about">
         <div class="main-about">
             <div class="main-about-txt"><h1 class="abot-txt">About Me.</h1></div>
+
             <div class="about-contents">
                 <div class="about-first-sec">
-                    <img src="images/about-img.jpg" alt="" id="about-photo">
+                    <img src="images/about.JPG" alt="" id="about-photo">
                 </div>
-                <div class="about-second-sec">
-                    <p>I am Muhammed Jasim K, a Full stack developer with proficiency in both front-end and back-end web application development, possessing strong analytical and creative skills, and being a team player with a keen attention to detail.</p>
+                <div class="about-details-div">
+                    <div class="about-second-sec">
+                        <p>I am Muhammed Jasim K, a Full stack developer with proficiency in both front-end and back-end web application development, possessing strong analytical and creative skills, and being a team player with a keen attention to detail.</p>
+                    </div>
+                    <div class="exp-details">
+                        <div class="exp-items">
+                            <p class="exp">01+</p>
+                            <p class="exp-description">Years Experiance</p>
+                        </div>
+                        <div class="exp-items">
+                            <p class="exp">06+</p>
+                            <p class="exp-description">Compleeted Projects</p>
+                        </div>
+                        <div class="exp-items">
+                            <p class="exp">03+</p>
+                            <p class="exp-description">Awards Recieved</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,50 +114,63 @@
 
 
     <section id="skill-sec">
-        <div class="main">
+        <div class="main-skill">
             <div id="skills"><span id="skill-txt">Skills.</span></div>
             <p id="skill-bottom-txt">My Technical Level.</p>
             <div class="my-slills">
-                <div class="top">
-                    <div class="frondend">
-
+                <div class="left">
+                    <div class="frondend skillls-div">
                         <p class="heading"><span class="material-symbols-outlined" id="skill-icon">
                             dvr
-                            </span> Front End  Devolopment <span class="material-symbols-outlined" id="more">
+                            </span> Front End  Devolopment <span class="material-symbols-outlined skills-more" id="more">
                                 expand_more
                                 </span></p>
-                        <p class="skill-type"> HTML <span id="per-bar"><span id="html"></span></span></p>
-                        <p class="skill-type"> CSS <span id="per-bar"><span id="css"></span></span></p>
-                        <p class="skill-type"> Java Script <span id="per-bar"><span id="js"></span></span></p>
-                        <p class="skill-type"> React <span id="per-bar"><span id="react"></span></span></p>
+                        <div class="my-skills-list" id="my-skills-list">
+                            <p class="skill-type"> HTML <span id="per-bar"><span id="html"></span></span></p>
+                            <p class="skill-type"> CSS <span id="per-bar"><span id="css"></span></span></p>
+                            <p class="skill-type"> Java Script <span id="per-bar"><span id="js"></span></span></p>
+                            <p class="skill-type"> React <span id="per-bar"><span id="react"></span></span></p>
+                            <p class="skill-type"> Bootstrap <span id="per-bar"><span id="bootstrap"></span></span></p>
+
+                        </div>
                     </div>
-                    <div class="backend">
-                        <p class="heading"> <span class="material-symbols-outlined" id="skill-icon">
-                            database
-                            </span> Backend Devolopment <span class="material-symbols-outlined" id="more">
-                                expand_more
-                                </span></p>
-                        <p class="skill-type"> Node Js <span id="per-bar"><span id="nodejs"></span></span></p>
-                        <p class="skill-type"> Express Js <span id="per-bar"><span id="expressjs"></span></span></p>
-                        <p class="skill-type"> MongoDB <span id="per-bar"><span id="mongodb"></span></span></p>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="designing">
+                    <div class="designing skillls-div">
                         <p class="heading"> <span class="material-symbols-outlined" id="skill-icon">
                             draw
-                            </span> Designing <span class="material-symbols-outlined" id="more">
+                            </span> Designing <span class="material-symbols-outlined skills-more" id="more">
                                 expand_more
                                 </span></p>
-                        <p class="skill-type"> Photoshop <span id="per-bar"><span id="photoshop"></span></span></p>
+                            <div class="my-skills-list" id="my-skills-list">
+                                <p class="skill-type"> Photoshop <span id="per-bar"><span id="photoshop"></span></span></p>
+                            </div>
                     </div>
-                    <div class="other">
+
+
+
+                </div>
+                <div class="right">
+                    <div class="backend skillls-div">
+                        <p class="heading"> <span class="material-symbols-outlined" id="skill-icon">
+                            database
+                            </span> Backend Devolopment <span class="material-symbols-outlined skills-more" id="more">
+                                expand_more
+                                </span></p>
+                            <div class="my-skills-list" id="my-skills-list">
+                                <p class="skill-type"> Python <span id="per-bar"><span id="python"></span></span></p>
+                                <p class="skill-type"> Django <span id="per-bar"><span id="django"></span></span></p>
+                                <p class="skill-type"> MySQL <span id="per-bar"><span id="mysql"></span></span></p>
+                            </div>
+                            
+                    </div>
+                    <div class="other skillls-div">
                         <p class="heading"><span class="material-symbols-outlined" id="skill-icon">
                             polyline
-                            </span> Other <span class="material-symbols-outlined" id="more" >
+                            </span> Other <span class="material-symbols-outlined skills-more" id="more" >
                                 expand_more
                                 </span></p>
-                        <p class="skill-type"> Git <span id="per-bar"><span id="git"></span></span></p>
+                            <div class="my-skills-list" id="my-skills-list">
+                                <p class="skill-type"> Git <span id="per-bar"><span id="git"></span></span></p>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -163,6 +197,9 @@
                 </div>
                 <div class="service-type-txt-div" id="Static">
                     <p class="service-type-txt">Static Website</p>
+                    <p class="read-more">Read More <span class="material-symbols-outlined">
+                        arrow_right_alt
+                        </span></p>
                 </div>
             </div>
             <div class="service-items"  id="web-designing-div">
@@ -173,6 +210,9 @@
                 </div>
                 <div class="service-type-txt-div" id="web-designing">
                     <p class="service-type-txt">Web Designing</p>
+                    <p class="read-more">Read More <span class="material-symbols-outlined">
+                        arrow_right_alt
+                        </span></p>
                 </div>
 
             </div>
@@ -184,6 +224,9 @@
                 </div>
                 <div class="service-type-txt-div" id="animation-img">
                     <p class="service-type-txt">Animation</p>
+                    <p class="read-more">Read More <span class="material-symbols-outlined">
+                        arrow_right_alt
+                        </span></p>
                 </div>
 
             </div>
@@ -196,6 +239,94 @@
             </div>
         </div>
     </section>
+        
+
+            <!-- end service section -->
+
+
+
+            <!-- start portfolio section -->
+
+    <section class="portfolio-sec" id="portfolio">
+        <div class="portfolio-heading">
+            <h1>Portfolio</h1>
+            <p>My Recent Works</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="portfolio-content">
+                    <div class="portflio-img-div">
+                        <img src="images/burgerbites thumbnail.png" alt="" class="portflio-img">
+                    </div>
+    
+                    <div class="portfolio-content-txt">
+                        <h5>Burger Bites Shope Website</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ea accusamus aliquid! Unde repudiandae quam pariatur nemo veritatis! Iure enim rem similique ipsum qui aut ullam praesentium dicta amet blanditiis!</p>
+                        <a href=""><button class="portflio-demo">
+                            Show Demo <i class="bi bi-arrow-right-short demo"></i>
+                        </button></a>
+                    </div>
+                </div>            
+                
+    
+              </div>
+            <div class="swiper-slide">
+                <div class="portfolio-content">
+                    <div class="portflio-img-div">
+                        <img src="images/movie_website-thumbnail.png" alt="" class="portflio-img">
+                    </div>
+    
+                    <div class="portfolio-content-txt">
+                        <h5>Movie Production Website</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ea accusamus aliquid! Unde repudiandae quam pariatur nemo veritatis! Iure enim rem similique ipsum qui aut ullam praesentium dicta amet blanditiis!</p>
+                        <a href=""><button class="portflio-demo">
+                            Show Demo <i class="bi bi-arrow-right-short demo"></i>
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="portfolio-content">
+                    <div class="portflio-img-div">
+                        <img src="images/Ecommerce-thumbnail.png" alt="" class="portflio-img">
+                    </div>
+    
+                    <div class="portfolio-content-txt">
+                        <h5>Estore Web Application</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ea accusamus aliquid! Unde repudiandae quam pariatur nemo veritatis! Iure enim rem similique ipsum qui aut ullam praesentium dicta amet blanditiis!</p>
+                        <a href=""><button class="portflio-demo">
+                            Show Demo <i class="bi bi-arrow-right-short demo"></i>
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next swiper-btn">
+                <span class="material-symbols-outlined arrow rightarrow">
+                    arrow_forward_ios
+                    </span>
+            </div>
+            <div class="swiper-button-prev swiper-btn">
+                <span class="material-symbols-outlined arrow leftarrow">
+                    arrow_back_ios_new
+                    </span>
+            </div>
+            <div>
+                
+            </div>
+            <div class="swiper-pagination page-dot"></div>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+            <!-- end portflio section -->
+
 
 
 
@@ -213,16 +344,25 @@
                 </div>
                 <div id="details-div">
                     <div class="my-details">
-                        <!-- <div class="my-div"> -->
+                        <div class="my-div">
                             <div class="my">
-                                <i class="bi bi-telephone" id="call"></i><p id="co-id">Call Me.</p>
-                                <p id="co-d">+91-7510140803</p>
-                                <i class="bi bi-envelope" id="mail"></i><p id="co-id">Email.</p>
-                                <p id="co-d">muhammedjasim1000@gmail.com</p>
-                                <i class="bi bi-geo-alt" id="location"></i><p id="co-id">Location.</p>
-                                <p id="co-d">Mukkom,Kozhikode</p>
+                                <div class="personal-dt">
+                                    <i class="bi bi-telephone contact-ic" id="call"></i>
+                                    <p id="co-id">Call Me.</p>
+                                    <p id="co-d">+91-7510140803</p>
+                                </div>
+                                <div class="personal-dt">
+                                    <i class="bi bi-envelope contact-ic" id="mail"></i>
+                                    <p id="co-id">Email.</p>
+                                    <p id="co-d">muhammedjasim1000@gmail.com</p>
+                                </div>
+                                <div class="personal-dt">
+                                    <i class="bi bi-geo-alt contact-ic" id="location"></i>
+                                    <p id="co-id">Location.</p>
+                                    <p id="co-d">Mukkom,Kozhikode</p>
+                                </div>
                             </div>
-                        <!-- </div> -->
+                        </div>
 
 
 
@@ -258,6 +398,9 @@
 
         </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
     </body>
+
+
 </html>
