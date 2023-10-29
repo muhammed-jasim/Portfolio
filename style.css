@@ -4,8 +4,8 @@
     --headings:28px;
     --short-headings:14px;
 
-    --medium-heading:27px ;
-    --medium-short-headings:14px;
+    --medium-heading:23px ;
+    --medium-short-headings:12px;
     --heder-height:4rem;
 }
 
@@ -295,6 +295,8 @@ a{
         background: none;
         background-color: white;
         position: fixed;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        
 
     }
     .more-div{
@@ -304,6 +306,8 @@ a{
     /* border: 2px solid red; */
     visibility: visible;
     width: 100%;
+    
+
     }
     #more-icon{
         margin: 2%;
@@ -327,7 +331,7 @@ a{
         width: 100%;
         /* height: 40vh; */
         background-color: #ffffff; 
-        transition: 0.5s linear;
+
     }
     ul{
         position: absolute;
@@ -338,10 +342,10 @@ a{
         top: 0%;
         margin: 0%;
         right: 1px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         /* box-sizing: border-box; */
         width: 60px;
-        transition: 0.5s linear;
-        /* border: 2px solid red; */
+        /* border: 2px solid red;1 */
 
     }
     .items{
@@ -355,6 +359,7 @@ a{
         justify-content: center;
         align-items: center;
         height:5vh;
+        
     }
 }
 
@@ -625,7 +630,7 @@ a{
             }
             @media (max-width:650px){
                 .main-about-txt{
-                    padding-top: 7vh;
+                    padding-top: 8vh;
                 }
                 .exp-description{
                     font-size: 13px;
@@ -649,8 +654,8 @@ a{
             }
             @media (max-width:340px){
                 #about-photo{
-                    max-width: 280px;
-                    max-height: 280px;
+                    max-width: 270px;
+                    max-height: 270px;
                     width: 100%;
                 }
                 .about-second-sec{
@@ -658,10 +663,20 @@ a{
                     /* font-size: 17px; */
             }
             }
+            @media (max-width:300px){
+
+                .exp-description{
+                    font-size:9px;
+                }
+            }
             @media (max-width:170px){
                 .about-second-sec{
                     margin: 5% 5%;
                     font-size: 12px;
+            }
+            
+            .exp-description{
+                font-size:7px;
             }
             }
             @media (max-width:130px){
@@ -927,6 +942,21 @@ a{
         width: 90%;
     }
 }
+@media (max-width:650px){
+    #skills{
+        margin-top: 1vh;
+    }
+}
+@media (max-width:650px){
+    #skills{
+        font-size: var(--medium-heading);
+    }
+    #skill-bottom-txt{
+        font-size: var(--medium-short-headings);
+        margin-top: 0;
+    }
+}
+
 /* @media (max-width:1024px){
     .heading{
         font-size: 20px;
@@ -1149,7 +1179,6 @@ a{
 
 }
 .services{
-    /* border: 2px solid rgb(255, 144, 144); */
     width: 100%;
     display: flex;
     justify-content:center;
@@ -1318,9 +1347,19 @@ a{
 }
 @media (max-width: 650px){
     .Service-txt{
-        margin-top: 8vh;
+        margin-top: 11vh;
     }
 }
+@media (max-width: 600px){
+    .Service-txt{
+        font-size: var(--medium-heading);
+    }
+    .Service-bottom-txt{
+        font-size: var(--medium-short-headings);
+    }
+    
+}
+
 @media (max-width: 500px){
     .service-type-txt-div{
         font-size: 15px;
@@ -1333,13 +1372,7 @@ a{
         margin: 17px;
         font-size: 25px;
     }
-    .Service-txt{
-        font-size: var(--medium-heading);
-    }
-    .Service-bottom-txt{
-        font-size: var(--medium-short-headings);
-    }
-    
+
 }  
 
 
@@ -1552,13 +1585,17 @@ a{
         width: 80%;
     }
 }
-@media(max-width:560px){
+@media(max-width:600px){
     .portfolio-heading h1{
         font-size: var(--medium-heading);
     }
     .portfolio-heading p{
         font-size: var(--medium-short-headings);
     }
+}
+
+@media(max-width:560px){
+
     .mySwiper{
         width:90%;
     }
@@ -1570,6 +1607,11 @@ a{
     }
     .leftarrow{
         margin-right: 20px;
+    }
+}
+@media(max-width:650px){
+    .portfolio-heading{
+        padding-top: 1vh;
     }
 }
 @media(max-width:560px){
@@ -1805,9 +1847,10 @@ a{
         font-size: 80%;
     }
 }
-@media (max-width:600px){
+@media (max-width:650px){
     .contact-me{
-        padding-top:8vh;
+        padding-top:11vh;
+        /* border: 2px solid red;; */
     }
 }
 
