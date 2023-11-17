@@ -308,6 +308,10 @@ a{
     width: 100%;
     
 
+
+    }
+    .photo-div{
+        margin-top: 50px;      /*remove*/
     }
     #more-icon{
         margin: 2%;
@@ -376,7 +380,10 @@ a{
     .texts{
         margin-top: 10%;
         /* margin-top: 20%; */
-        font-size: 17;
+        font-size: 16px;
+    }
+    .job{
+        font-size: 12px;
     }
     .photo-div{
         margin-top: 50px;      /*remove*/
@@ -389,6 +396,11 @@ a{
     }
     .icon{
         font-size: 19px;
+    }
+    .contact-click{
+    width:100px;
+    height: 45px;
+    font-size: 12px;
     }
 }
 @media (max-width:330px){
@@ -1923,29 +1935,3 @@ a{
 
     }
 }
-/* @media (max-width:330px){
-        .my{
-            font-size: 10px;
-
-        }
-        #co-id{
-            font-size: 10px;
-        }
-}
-@media (max-width:280px){
-        .my{
-            font-size: 10px;
-
-            width: 100%;
-        }
-}
-@media (max-width:225px){
-    #co-d{
-            font-size: 7px;
-        }
-}
-@media (max-width:200px){
-    #co-d{
-            font-size: 5px;
-        }
-} */
