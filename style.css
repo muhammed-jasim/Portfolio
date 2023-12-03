@@ -77,6 +77,10 @@ ul span.material-symbols-outlined.phone-screen {
 .phone-nav{
     display: none;
 }
+#phone-menu{
+    font-size: 22px;
+    font-weight: bolder !important;
+}
 .br{
     display: none;
 }
@@ -208,9 +212,10 @@ ul span.material-symbols-outlined.phone-screen {
 
     }
     .mobile-nav-items.active{
-        bottom: 45px;
+        bottom: 50px;
         transform: translateY(0);
     }
+
     .nav-bar.mobile{
         display:flex;
         justify-content:space-between;

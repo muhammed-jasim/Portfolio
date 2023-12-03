@@ -83,9 +83,10 @@
                     
                 </div>
                 <div class="phone-nav" >
-                    <span class="material-symbols-outlined" id="phone-menu">
+                    <!-- <span class="material-symbols-outlined" id="phone-menu">
                         lists
-                        </span>
+                        </span> -->
+                        <i class="bi bi-list-task" id="phone-menu" ></i>
                 </div>
             </nav>
         </div>
@@ -432,11 +433,11 @@
                         <!-- <div class="inp"> -->
                         <div class="input-sec">
                             <div class="form">
-                                <form action="">
-                                    <input type="text" placeholder="Name*" required><br>
-                                    <input type="email" placeholder="Email*" required ><br>
-                                    <input type="text" placeholder="Place*"><br>
-                                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message*" required></textarea><br>
+                                <form action="https://formspree.io/f/mjvqqqvg" method="post">
+                                    <input type="text" name="Name" placeholder="Name*" required><br>
+                                    <input type="email" name="Email" placeholder="Email*" required ><br>
+                                    <input type="text" name="Place" placeholder="Place*"><br>
+                                    <textarea name="Message"  id="message" cols="30" rows="10" placeholder="Message*" required></textarea><br>
                                     <div id="co-btn"><button id="btn">Contact Me</button></div>
                                 </form>
                             </div>

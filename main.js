@@ -3,17 +3,21 @@ let MenuIcon = document.getElementById('phone-menu')
 let navItems = document.querySelector('.mobile-nav-items')
 let logoName = document.getElementById('logo-name')
 
-var isMenuOpen = false;
+// var isMenuOpen = false;
 
 MenuIcon.addEventListener('click',function(){
-  isMenuOpen = !isMenuOpen;
+  // isMenuOpen = !isMenuOpen;
   navItems.classList.toggle('active')
-  MenuIcon.innerHTML = isMenuOpen ? 'Close' : 'lists';
-  logoName.classList.toggle('hidden',isMenuOpen)
+  MenuIcon.classList.toggle('bi-x')
+  // MenuIcon.innerHTML = isMenuOpen ? 'Close' : 'lists';
+  // logoName.classList.toggle('hidden',isMenuOpen)
 
 })
 navItems.addEventListener('click',function(){
   navItems.classList.remove('active')
+  MenuIcon.classList.remove('bi-x')
+
+  
 })
 
 
