@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
-    <section id="home">
-        <div class="main-div">
-            <div class="nav-div">
-                <nav id="nav-bar">
-                    <ul class="nav-items" id="navigation-bar">
+    <section id="home" class="home-section">
+        <div class="nav-div">
+            <nav class="nav-bar">
+                <div class="logo-div">
+                    <p>Jasim.</p>
+                </div>
+                <div class="nav-items">
+                    <ul>
                         <a href="#home"><li class="items">Home</li></a>
                         <a href="#about"><li class="items">About</li></a>
                         <a href="#skill-sec"><li class="items">Skill</li></a>
@@ -25,39 +28,85 @@
                         <a href="#portfolio"><li class="items">Portfolio</li></a>
                         <a href="#contact-sec"><li class="items">Contact</li></a>
                     </ul>
-                    <div class="m"></div>
-                        <div class="more-div">
-                            <a href="#navigation-bar"><span class="material-symbols-outlined" id="more-icon">
-                                menu
-                                </span></a>
+                </div>
+            </nav>
+
+            <nav class="nav-bar mobile">
+                <div class="logo-div">
+                    <p id="logo-name">Jasim.</p>
+                </div>
+                <div class="mobile-nav-items  ">
+                    <div class="first-nav">
+                    <ul>
+                        <a href="#home"><li class="items">
+                            <span class="material-symbols-outlined phone-screen">
+                                home
+                                </span>
+                            Home</li>
+                        </a>
+                        
+                        <a href="#about"><li class="items">
+                            <span class="material-symbols-outlined phone-screen">
+                                person
+                                </span>
+                            About</li>
+                        </a>
+
+                        <a href="#skill-sec"><li class="items">
+                            <span class="material-symbols-outlined phone-screen">
+                                feed
+                                </span>
+                            Skill</li></a>
+                        </ul>
                         </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="contents">
-                <div class="co-div">
-                    <div class="photo-div">
-                        <div class="pic">
-                            <img src="images/my-img1.png" alt="" class="photo">
+                        <div class="second-nav">
+                            <ul>
+                        <a href="#service-sec"><li class="items">
+                            <span class="material-symbols-outlined phone-screen">
+                                work
+                                </span>
+                            Service</li></a>
+     
+                        <a href="#portfolio"><li class="items">
+                            <span class="material-symbols-outlined phone-screen">
+                                imagesmode
+                                </span>
+                            Portfolio</li></a>
+                        <a href="#contact-sec"><li class="items">
+                            <span class="material-symbols-outlined phone-screen">
+                                contact_page
+                                </span>
+                            Contact</li></a>
+                        </ul>
+
                         </div>
+                    
+                </div>
+                <div class="phone-nav" >
+                    <span class="material-symbols-outlined" id="phone-menu">
+                        lists
+                        </span>
+                </div>
+            </nav>
+        </div>
+        <div class="main-home-div">
+            <div class="home-contents">
+                <div class="home-text">
+                    <h2>Hi,I'm</h2>
+                    <h2>Muhammed Jasim K</h2>
+                    <h4>Software Developer</h4>
+                    <div class="contact-div">
+                        <a href="#contact-sec"><button>Contact Me</button></a>
                     </div>
-                    <div class="texts">
-                        <h1 class="title">Hi, i'am</h1>
-                        <h1 class="title">Muhammed Jasim k</h1>
-                        <h3 class="title" id="job">Software Devoloper</h3>
+                    <div class="home-social">
+                        <a href="https://github.com/muhammed-jasim"><i class="bi bi-github social"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammed-jasim-k-9a9410275/"><i class="bi bi-linkedin social"></i></a>
+                        <a href="https://www.instagram.com/ja___sim/"><i class="bi bi-instagram social"></i></a>
+                        <a href="https://www.facebook.com/muhammadjasim.karassery?mibextid=LQQJ4d"><i class="bi bi-facebook social"></i></a>
                     </div>
                 </div>
-                <div class="home-contact-bar">
-                    <div class="contact-click">
-                        <a href="#contact-sec"><div id="contact">Contact Me</div></a>
-                    </div>
-                </div>
-                <div class="icons-div">
-                    <div class="icons">
-                        <div class="icon"> <a href="https://instagram.com/ja___sim?igshid=MjEwN2IyYWYwYw=="><i class="bi bi-instagram" id="instagram"></i></a></div>
-                        <div class="icon"> <a href="https://www.linkedin.com/in/muhammed-jasim-9a9410275"><i class="bi bi-linkedin" id="linkedin"></i></a></div>
-                        <div class="icon"><a href="https://github.com/muhammed-jasim"><i class="bi bi-github" id="github"></i></a></div>
-                    </div>
+                <div>
+                    <dotlottie-player src="https://lottie.host/93d8c82d-0d25-4843-b16b-adae3f12f78e/AKSA5Uovuj.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay class="lottie-plyer"></dotlottie-player>
                 </div>
             </div>
         </div>
@@ -82,7 +131,7 @@
 
             <div class="about-contents">
                 <div class="about-first-sec">
-                    <img src="images/about.JPG" alt="" id="about-photo">
+                    <img src="images/my-img1.png" alt="" id="about-photo">
                 </div>
                 <div class="about-details-div">
                     <div class="about-second-sec">
@@ -400,6 +449,12 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+
+
+
+
     </body>
 
 

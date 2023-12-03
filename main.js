@@ -1,3 +1,21 @@
+// navigation bar
+let MenuIcon = document.getElementById('phone-menu')
+let navItems = document.querySelector('.mobile-nav-items')
+let logoName = document.getElementById('logo-name')
+
+var isMenuOpen = false;
+
+MenuIcon.addEventListener('click',function(){
+  isMenuOpen = !isMenuOpen;
+  navItems.classList.toggle('active')
+  MenuIcon.innerHTML = isMenuOpen ? 'Close' : 'lists';
+  logoName.classList.toggle('hidden',isMenuOpen)
+
+})
+navItems.addEventListener('click',function(){
+  navItems.classList.remove('active')
+})
+
 
 // portfolio swiper
 var swiper = new Swiper(".mySwiper", {
