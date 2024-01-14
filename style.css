@@ -1073,7 +1073,7 @@ ul span.material-symbols-outlined.phone-screen {
 #service-contact{
     /* border: 2px solid red; */
     width: 130px;
-    height: 60px;
+    height: 50px;
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -1126,8 +1126,45 @@ ul span.material-symbols-outlined.phone-screen {
     margin-left:5px;
 }
 
+/* service modal css */
 
 
+/* .modal{
+    display: block;
+    position: fi ;
+    top: 0;
+    left: 0 ;
+    width: 100%; 
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 50vh auto;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  } */
+  
 
 @media (max-width: 1024px){
         .service-items{
@@ -1344,18 +1381,17 @@ ul span.material-symbols-outlined.phone-screen {
 }
 .portflio-demo{
     width: 120px;
-    height: 55px;
+    height: 50px;
     border-radius: 7px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #3b38c8;
     color: white;
-    text-align: center;
     margin-top: 12px;
     cursor: pointer;
-    padding: 7px;
+    /* padding: 7px; */
+    padding-inline-start: 14px;
     outline: none;
     border: none;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
