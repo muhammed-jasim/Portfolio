@@ -191,15 +191,23 @@
             </div>
             <div class="exp-details">
               <div class="exp-items">
-                <p class="exp">01+</p>
-                <p class="exp-description">Years Experiance</p>
+                <p class="exp" id="experience-counter"></p>
+                <p class="exp-description">Years Experience</p>
               </div>
+
+              <script>
+                const startYear = 2023; // experience started
+                const currentYear = new Date().getFullYear();
+
+                const experience = Math.max(1, currentYear - startYear);
+                document.getElementById("experience-counter").textContent = `${experience}+`;
+              </script>
               <div class="exp-items">
-                <p class="exp">06+</p>
+                <p class="exp">20+</p>
                 <p class="exp-description">Compleeted Projects</p>
               </div>
               <div class="exp-items">
-                <p class="exp">02+</p>
+                <p class="exp">03+</p>
                 <p class="exp-description">Awards Recieved</p>
               </div>
             </div>
